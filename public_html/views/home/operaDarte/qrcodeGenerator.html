@@ -1,0 +1,35 @@
+<!-- OperaDarteController -->
+<div>
+    <div class="well col-xs-10 orderTitle" >
+    <h4><b>STAMPA QR-Code </b></h4>
+
+    </div>
+
+
+    <br data-ng-init=" e='M';s=274;" style=" margin: 16px;
+    text-align: center;">
+
+
+
+
+    <form id="formqrcode">
+        <p>
+        <label for="data"><b>Dati  QR-code</b></label>
+        <textarea id="data" data-ng-model="foo"></textarea>
+        </p>
+        <p>
+        <label for="size"><b>Taglia</b></label>
+        <input id="size" type="number" data-ng-model="s">
+        </p>
+        <p>
+        <label for="level" title="Error Correction Level">Livello di nitidezza</label>
+        <select id="level" data-ng-model="e" data-ng-options="option.version as option.name for option in [{name:'Low', version:'L'},{name:'Medium', version:'M'},{name:'Quartile', version:'Q'},{name:'High', version:'H'}]"></select>
+        </p>
+    </form>
+
+<h2 align="center">Clicca sul QR-code per scaricarlo </h2>
+
+<qrcode error-correction-level="{{e}}" size="{{s}}" data="{{foo}}" download id="QRCode"></qrcode>
+
+
+        </div>

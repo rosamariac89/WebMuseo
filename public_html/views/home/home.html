@@ -1,0 +1,44 @@
+<div class="row" ng-cloak>
+    <div class="col-xs-2">
+
+        <ul class="nav nav-pills nav-stacked on-click-make-active">
+        </br>
+        </br>
+        </br>
+        	
+        	
+            <li ui-sref-active="active" ><a  ui-sref="home.viewAll"><b>VISUALIZZA OPERE</b></a></li>
+
+            </br>
+                       
+
+            <li ui-sref-active="active" ><a ui-sref="home.viewMusei"><b>VISUALIZZA MUSEI</b></a></li>
+            </br>
+
+            </br>
+
+            <li ui-sref-active="active"  ng-hide="mansione=='Operatore'"><a ui-sref="home.musei"><b>GESTIONE MUSEI</b></a></li>
+            <li ui-sref-active="active" ><a ui-sref="home.operaDarte"><b>GESTIONE SCHEDA REPERTO OPERA D'ARTE</b></a></li>
+            <li ui-sref-active="active" ng-hide="mansione=='Operatore'" ><a ui-sref="home.account"><b>GESTIONE ACCOUNT</b></a></li>
+            </br>
+            </br>
+
+            </br>
+
+            <li ui-sref-active="active"><a ng-click="logout()"><b>ESCI DA AREA RISERVATA</b></a></li>
+
+
+
+        </ul>
+    </div>
+
+
+    <div class="col-xs-10 border-left">
+
+        <div ui-view></div>
+    </div>
+
+</div>
+
+
+

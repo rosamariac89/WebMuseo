@@ -1,0 +1,29 @@
+<div class="row" ng-cloak>
+    <div class="well col-xs-10 orderTitle" >
+        <h4><b>TUTTI I MUSEI</b></h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="museo in musei |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"  ng-click=""  >
+
+            <div class="" >
+               <b> {{museo.Nome}}</b>
+                </br>
+                </br>
+                <b>{{museo.Indirizzo}}</b>
+                </br>
+                </br>
+                <b>{{museo.Citta}}  {{museo.Nazione}}</b>
+                </br>
+                </br>
+                Orario d'apertura : <b>{{museo.OrarioApertura}} </b>
+                </br>
+                </br>
+                Descrizione:<br><b>{{museo.Descrizione}}</b>
+            </div>
+
+        </div>
+    </div>
+</div>

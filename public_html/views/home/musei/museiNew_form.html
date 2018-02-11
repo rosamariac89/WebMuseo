@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h4> <b> NUOVO MUSEO </b></h4>
+
+    </div>
+</div>
+</br>
+</br>
+</br>
+
+<div class="form-group" ng-class="{'has-error': museoNewForm.nome.$dirty && museoNewForm.nome.$invalid}">
+    <div class="row">
+
+        <div class="well col-xs-9 orderTitle"  >
+
+
+                <div >
+                    <b>Nome Museo : </b><input type="text" name="nome" ng-model="museo.nome" ng-required="true" class="form-control" id="nome" />
+                </div>
+        </br>
+            <div >
+                <b>Indirizzo : </b><input type="text" name="indirizzo" ng-model="museo.indirizzo" ng-required="true" class="form-control" id="indirizzo" />
+
+            </div>
+        </br>
+            <div>
+                <b>Orario Apertura : </b><input type="text" name="orario" ng-model="museo.orario" ng-required="true" class="form-control" id="orario" />
+            </div>
+
+            </br>
+            <div>
+                <b>Descrizione : </b><textarea name="descrizione" ng-model="museo.descrizione" ng-required="true" class="form-control" id="descrizione"></textarea>
+            </div>
+
+            </br>
+            <div>
+                <b>Citta' : </b><select name="citta" ng-model="museo.citta" ng-options="city.id as city.Nome for city in cities" ng-required="true" class="form-control" id="citta">
+                    <option value="">Seleziona una citta'</option>
+            </select>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <b>Il pulsante "Salva Museo" e' attivo  se tutti i campi sono valorizzati</b>
+        <button type="submit" class="btn btn-danger" style="float:right" ng-disabled="museoNewForm.$invalid" >{{buttonText}}</button>
+    </div>
+    <div>
+        <button class="btn btn-success" ng-click="annulla()" style="margin-left: 50px">Annulla</button>
+    </div>
+</div>

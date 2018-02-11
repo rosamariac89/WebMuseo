@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h3> <b> MODIFICA SCHEDA REPERTO </b></h3>
+        </br>
+        <h4>SELEZIONA LA SCHEDA REPERTO DA MODIFICARE</h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="oda in odas |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"  ui-sref="home.odaUpdate({id:oda.id})" ng-cloak >
+
+            <div  >
+                <b> {{oda.Titolo}}</b>
+
+
+                </br>
+                </br>
+                <b>{{oda.NomeArtista}}    {{oda.CognomeArtista}} </b>
+                </br>
+                </br>
+                <b>{{oda.AnnoPubblicazione}}</b>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>

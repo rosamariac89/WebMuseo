@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h4> <b> NUOVO ACCOUNT </b></h4>
+
+    </div>
+</div>
+</br>
+</br>
+</br>
+
+<div class="form-group" ng-class="{'has-error': accountNewForm.nome.$dirty && accountNewForm.nome.$invalid}">
+    <div class="row">
+
+        <div class="well col-xs-9 orderTitle"  >
+
+
+            <div >
+                <b>Nome Operatore : </b><input type="text" name="nome" ng-model="operatore.nome" ng-required="true" class="form-control" id="nome" />
+            </div>
+            </br>
+            <div >
+                <b>Cognome Operatore : </b><input type="text" name="cognome" ng-model="operatore.cognome" ng-required="true" class="form-control" id="cognome" />
+
+            </div>
+            </br>
+            <div>
+                <b>Username : </b><input type="text" name="username" ng-model="operatore.username" ng-required="true" class="form-control" id="username" />
+            </div>
+
+            </br>
+            <div>
+                <b>Password : </b><input type="text" name="password" ng-model="operatore.password" ng-required="true" class="form-control" id="password"/>
+            </div>
+            </br>
+            <div>
+                <b>Mansione : </b><select  name="mansione" ng-model="operatore.mansione" ng-required="true" class="form-control" id="mansione">
+                <option value="">Seleziona una mansione</option>
+                <option value="Operatore">Operatore</option>
+                <option value="Amministratore">Amministratore</option>
+            </select>
+            </div>
+            </br>
+            <div>
+                <b>Citta' : </b><select name="museo" ng-model="operatore.museo" ng-options="museo.id as museo.Nome for museo in musei" ng-required="true" class="form-control" id="museo">
+                <option value="">Seleziona il museo dove lavorera'</option>
+            </select>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <b>Il pulsante "Salva Account" e' attivo  se tutti i campi sono valorizzati</b>
+        <button type="submit" class="btn btn-danger" style="float:right" ng-disabled="accountNewForm.$invalid" >{{buttonText}}</button>
+    </div>
+    <div>
+        <button class="btn btn-success" ng-click="annulla()" style="margin-left: 50px">Annulla</button>
+    </div>
+</div>

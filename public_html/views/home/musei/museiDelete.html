@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h3> <b> ELIMINA MUSEO </b></h3>
+    </br>
+        <h4>SELEZIONA IL MUSEO DA ELIMINARE</h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="museo in musei |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"  ng-click="deleteMuseo(museo)"  >
+
+            <div  >
+                <b> {{museo.Nome}}</b>
+
+
+                </br>
+                </br>
+                <b>{{museo.Citta}} </b>
+                </br>
+                </br>
+                <b>{{museo.Nazione}}</b>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>

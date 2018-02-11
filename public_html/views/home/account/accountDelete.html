@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h3> <b> CANCELLA ACCOUNT </b></h3>
+        </br>
+        <h4>SELEZIONA L'ACCOUNT DA CANCELLARE</h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="operatore in operatori |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"  ng-click="deleteOperatore(operatore)"  >
+
+            <div  >
+                <b> {{operatore.Nome}}</b>
+
+
+                </br>
+                </br>
+                <b>{{operatore.Cognome}} </b>
+                </br>
+                </br>
+                <b>{{operatore.Mansione}}</b>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>

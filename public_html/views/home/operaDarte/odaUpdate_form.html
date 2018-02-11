@@ -1,0 +1,124 @@
+<div class="row">
+    <div class="well col-xs-10 orderTitle" >
+        <h3> <b>UPDATE OPERA D'ARTE </b></h3>
+    </div>
+</div>
+</br>
+</br>
+</br>
+
+<div class="form-group" ng-class="{'has-error': odaUpdateForm.nome.$dirty && odaUpdateForm.nome.$invalid}" ng-cloak>
+    <div class="row">
+
+        <div class="well col-xs-9 orderTitle" >
+
+
+            <div>
+                <b>Titolo Opera *: </b><input type="text" name="titolo" ng-model="oda.titolo" ng-required="true" class="form-control" id="titolo" placeholder="{{oda.Titolo}}"/>
+            </div>
+            </br>
+
+            <div>
+                <b>Anno Pubblicazione *: </b><input type="text" maxlength="10" name="annopubblicazione" ng-model="oda.annopubblicazione" ng-required="true" class="form-control" id="annopubblicazione" placeholder="{{oda.AnnoPubblicazione}}" />
+            </div>
+            </br>
+
+            <div>
+                <b>Descrizione Short *: </b><input type="text" name="descrizioneshort" ng-model="oda.descrizioneshort" ng-required="true" class="form-control" id="descrizioneshort" placeholder="{{oda.DescrizioneShort}}"/>
+            </div>
+            </br>
+
+
+            <div>
+                <b>Descrizione Long : </b><textarea rows="20" cols="50" name="descrizionelong" ng-model="oda.descrizionelong" ng-required="false" class="form-control" id="descrizionelong" placeholder="{{oda.DescrizioneEstesa}}"/>
+            </div>
+            </br>
+
+            <div>
+                <b>Dimensione *: </b><input type="text" name="dimensione" ng-model="oda.dimensione" ng-required="true" class="form-control" id="dimensione"  placeholder="{{oda.Dimensione}}"/>
+            </div>
+
+            </br>
+            <div>
+                <b>Periodo : </b><input type="text" name="periodo" ng-model="oda.periodo" ng-required="false" class="form-control" id="periodo" placeholder="{{oda.Periodo}}" />
+            </div>
+
+            </br>
+            <div>
+                <b>Peso : </b><input type="text" name="peso" ng-model="oda.peso" ng-required="false" class="form-control" id="peso" placeholder="{{oda.Peso}}" />
+            </div>
+
+            </br>
+            <div>
+                <b>Cultura : </b><input type="text" name="cultura" ng-model="oda.cultura" ng-required="false" class="form-control" id="cultura" placeholder="{{oda.Cultura}}" />
+            </div>
+
+            </br>
+
+
+            </br>
+            </br>
+
+            <div>
+                <b>Valore in $ *: </b><input type="number" step="0.01" name="valore" ng-model="oda.valore" ng-required="true" class="form-control" id="valore" placeholder="{{oda.Valore}}"/>
+            </div>
+
+            </br>
+            <div>
+                <b>Proprietario *: </b><input type="text" name="proprietario" ng-model="oda.proprietario" ng-required="true" class="form-control" id="proprietario" placeholder="{{oda.Proprietario}}"/>
+            </div>
+
+            </br>
+            <div>
+                <b>Museo *: </b><select name="museo" ng-model="oda.museo" ng-options="museo.id as museo.Nome for museo in musei" ng-required="true" class="form-control" id="museo">
+                <option value="">Seleziona il museo dove l'opera verrà esposta</option>
+            </select>
+            </div>
+
+            </br>
+            <div>
+                <b>Autore *: </b><select name="artista" ng-model="oda.artista" ng-options="artista.id as artista.Cognome for artista in artisti" ng-required="true" class="form-control" id="artista">
+                <option value="">Seleziona l'autore dell'opera</option>
+            </select>
+            </div>
+            </br>
+
+            <div>
+                <b>Tecnica utilizzata *: </b><select name="tipologia" ng-model="oda.tipologia" ng-options="tipologia.id as tipologia.Tecnica for tipologia in tipologie" ng-required="true" class="form-control" id="tipologia">
+                <option value="">Seleziona la tecnica utilizzata</option>
+            </select>
+            </div>
+
+            </br>
+            <div>
+                <b>File Audio : </b><input type="text" name="fileaudio" ng-model="oda.fileaudio" ng-required="false" class="form-control" id="fileaudio" placeholder="{{oda.Audio}}                     ------------------------Per cancellare l'audio digitare 'NO'--------------------------------" />
+
+            </div>
+
+
+            </br>
+            <div>
+                <b>File Video : </b><input type="text" name="filevideo" ng-model="oda.filevideo" ng-required="false" class="form-control" id="filevideo" placeholder="{{oda.Video}}" />
+            </div>
+
+
+            </br>
+            <div>
+                <b>File Immagine : </b><input type="text" name="fileimmagine" ng-model="oda.fileimmagine" ng-required="false" class="form-control" id="fileimmagine" placeholder="{{oda.Immagine}}" />
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+  <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        <b>Clickando sul pulsante "Salva Modifiche Scheda Reperto"  </br>la scheda reperto diventa "non pubblicata".</b>
+        <button type="submit" class="btn btn-danger" style="float:right"  >{{buttonText}}</button>  <!--  ng-disabled="odaUpdateForm.$invalid"  -->
+         </div>
+            <div>
+                <button class="btn btn-success" ng-click="annulla()" style="margin-left: 50px">Annulla</button>
+            </div>
+  </div>

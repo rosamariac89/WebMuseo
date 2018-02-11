@@ -1,0 +1,32 @@
+<!-- OperaDarteController -->
+<div class="row" ng-cloak>
+    <div class="well col-xs-10 orderTitle" >
+        <h4><b>GENERA QR-CODE</b></h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="opera in opere |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"   ui-sref="home.operaDarteQRcode({id:opera.id})" >  <!--  ng-if="opera.Pubblicata == 1" -->
+
+            <h4 class="">Id : <b>{{opera.id}}</b>
+            </h4>
+            <div class="" >
+                Titolo dell'opera  :<b> {{opera.Titolo}}</b>
+                </br>
+                </br>
+                Anno Pubblicazione : <b>{{opera.AnnoPubblicazione}}</b>
+                </br>
+                </br>
+                Dimensioni  :  <b>{{opera.Dimensione}}</b>
+                </br>
+                </br>
+                Autore : <b>{{opera.NomeArtista}} {{opera.CognomeArtista}} </b>
+                </br>
+                </br>
+                <b>{{opera.Tipologia}}</b>
+            </div>
+
+        </div>
+    </div>
+</div>

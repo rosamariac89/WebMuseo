@@ -1,0 +1,47 @@
+<div class="row" ng-cloak>
+    <div class="well col-xs-10 orderTitle" >
+        <h4><b>TUTTE LE OPERE</b></h4>
+
+    </div>
+
+    <div class="col-xs-4" ng-repeat="opera in opere |orderBy:'id'" >
+
+        <div class="well menuName sensorsName"  ng-click="" ui-sref="home.viewOperaDarte({id:opera.id})" ng-if="opera.Pubblicata == 1" >
+
+            <h4 class="">Id : <b>{{opera.id}}</b>
+            </h4>
+            <div class="" >
+                Titolo dell'opera  :<b> {{opera.Titolo}}</b>
+                <br>
+                <br>
+                Anno Pubblicazione : <b>{{opera.AnnoPubblicazione}}</b>
+                <br>
+                <br>
+                Dimensioni  :  <b>{{opera.Dimensione}}</b>
+                <br>
+                <br>
+                Autore : <b>{{opera.NomeArtista}} {{opera.CognomeArtista}} </b>
+                <br>
+                <br>
+                <b>{{opera.Tipologia}}</b>
+                <br>
+                <br>
+                Periodo Storico : <b>{{opera.Periodo}}</b>
+                <br>
+                <br>
+                Peso  :  <b>{{opera.Peso}}</b>
+                <br>
+                <br>
+                Cultura  :  <b>{{opera.Cultura}}</b>
+                <br>
+                <br>
+                Valore  :  <b>{{opera.Valore}} $</b>
+                <br>
+                <br>
+                Proprietario  :  <b>{{opera.Proprietario}}</b>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+<br class="row" ng-cloak>
+    <div class="well col-xs-10 orderTitle" >
+        <h4><b>{{opera.Titolo}} </b></h4>
+
+    </div>
+    <div class="col-xs-10"  align="center">
+            <img ng-src="{{immagine}}" >
+    </div>
+
+
+
+
+    <div class="col-xs-10" style="text-align:justify">
+        <br>
+        <br>
+        <br>
+        <br>
+        Descrizione : </br><b style="text-align:justify">{{opera.DescrizioneEstesa}}</b>
+    </div>
+
+    <div class="col-xs-10" style="margin-bottom: 80px"><!--{red:sensor.isAlert}-->
+        <br>
+        <br>
+         <div class="" >
+            Titolo dell'opera  :<b> {{opera.Titolo}}</b>
+            <br>
+            <br>
+            Anno Pubblicazione : <b>{{opera.AnnoPubblicazione}}</b>
+            <br>
+            <br>
+            Dimensioni  :  <b>{{opera.Dimensione}}</b>
+            <br>
+            <br>
+            Autore : <b>{{opera.NomeArtista}} {{opera.CognomeArtista}} </b>
+            <br>
+             <br>
+             <b>{{opera.Tipologia}}</b>
+             <br>
+             <br>
+             Periodo Storico : <b>{{opera.Periodo}}</b>
+             <br>
+             <br>
+             Peso  :  <b>{{opera.Peso}}</b>
+             <br>
+             <br>
+             Cultura  :  <b>{{opera.Cultura}}</b>
+             <br>
+             <br>
+             Valore  :  <b>{{opera.Valore}} $</b>
+             <br>
+             <br>
+             Proprietario  :  <b>{{opera.Proprietario}}</b>
+
+        </div>
+
+    </div>
+<br>>
+<div style="margin-bottom: 50px">
+     <br>
+     <br>
+     <audio ng-src="{{audio}}" preload="auto" controls></audio><br style="margin-left: 50px">
+
+     <br>
+    <h3><b>Audio descrizione dell'opera </b></h3><b>(Player attivo se la descrizione è  presente)</b>
+</div>
+<br>
+<video ng-src='{{video}}' type="video/mp4" controls>
+    Your browser does not support the <code>video</code> element.
+</video>
+
+<br>
+<br>
+<h3><b>Video descrizione dell'opera </b></h3><b>(Player attivo se la descrizione è  presente)</b>
+
+
+</div>

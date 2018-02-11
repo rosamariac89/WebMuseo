@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "name": "mysql-to-rest",
+        "raw": "mysql-to-rest",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Giovanni\\Documents\\UniSalento\\EsamiSuperati\\PrincipiDiProgettazione\\eclipse\\SMSreloaded\\public"
+    ]
+  ],
+  "_from": "mysql-to-rest@latest",
+  "_id": "mysql-to-rest@1.0.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mysql-to-rest",
+  "_nodeVersion": "6.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/mysql-to-rest-1.0.6.tgz_1468230737200_0.11426154407672584"
+  },
+  "_npmUser": {
+    "email": "ardobras@googlemail.com",
+    "name": "ardobras"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {
+    "content-type": "1.0.2",
+    "http-errors": "1.6.1",
+    "media-typer": "0.3.0",
+    "unpipe": "1.0.0"
+  },
+  "_requested": {
+    "name": "mysql-to-rest",
+    "raw": "mysql-to-rest",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mysql-to-rest/-/mysql-to-rest-1.0.6.tgz",
+  "_shasum": "0ed22e0af7d3191f9f25233ace82e1feb35dc9f8",
+  "_shrinkwrap": null,
+  "_spec": "mysql-to-rest",
+  "_where": "C:\\Users\\Giovanni\\Documents\\UniSalento\\EsamiSuperati\\PrincipiDiProgettazione\\eclipse\\SMSreloaded\\public",
+  "author": {
+    "name": "Keno Dressel"
+  },
+  "bugs": {
+    "url": "https://github.com/Ardobras/mysql-to-rest/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "multer": "^0.1.8"
+  },
+  "description": "This module maps an MYSQL DB to an REST API interface.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "0ed22e0af7d3191f9f25233ace82e1feb35dc9f8",
+    "tarball": "https://registry.npmjs.org/mysql-to-rest/-/mysql-to-rest-1.0.6.tgz"
+  },
+  "gitHead": "076a3251d6737b94e184109011544ef606a5651c",
+  "homepage": "https://github.com/Ardobras/mysql-to-rest",
+  "keywords": [
+    "mysql",
+    "rest",
+    "api"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "ardobras@googlemail.com",
+      "name": "ardobras"
+    }
+  ],
+  "name": "mysql-to-rest",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ardobras/mysql-to-rest.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.6"
+}
